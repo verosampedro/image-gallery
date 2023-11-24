@@ -1,3 +1,124 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Cormorant+Garamond&family=Karla:wght@600&family=Lilita+One&family=M+PLUS+Rounded+1c&family=Nanum+Gothic&family=Press+Start+2P&family=Quicksand&family=Rubik+Mono+One&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  background-color: black;
+  color: #B1B890;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.5rem;
+  padding: 10px;
+  text-align: center;
+}
+
+main {
+  background-color: black;
+}
+main #photosContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 99vw;
+}
+main .photoItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid white;
+  width: 30%;
+  margin: 10px 10px 10px 10px;
+}
+main img {
+  width: 500px;
+}
+main p {
+  color: white;
+  font-family: "Cormorant Garamond", serif;
+}
+
+/* Responsive tablet */
+@media (min-width: 801px) {
+  main #photosContainer {
+    width: 100%;
+  }
+  main .photoItem {
+    align-content: center;
+  }
+  main img {
+    width: 100%;
+  }
+  main p {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+}
+/* Responsive mobile */
+@media only screen and (min-width: 320px) {
+  #photosContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #photosContainer img {
+    width: 100%;
+  }
+  #photosContainer .photoItem {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
